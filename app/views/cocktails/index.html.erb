@@ -1,7 +1,13 @@
-<h1>Cocktail list</h1>
-<ul>
-    <% @cocktails.each do |cocktail|%>
-  <li> <%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-  <% end %>
-</ul>
-<button> <%= link_to "Create a cocktail", new_cocktail_path%></button>
+<div class="banner">
+  <h1>Cocktails</h1>
+</div>
+<div class="container">
+      <% @cocktails.each do |cocktail|%>
+      <div class="card">
+        <img src="https://assets.afcdn.com/recipe/20181220/84959_w350h250c1cx1989cy3800.jpg" alt="">
+        <%= link_to cocktail.name, cocktail_path(cocktail) %>
+      </div>
+       <% end %>
+  <button class="btn"> <%= link_to "Create a cocktail", new_cocktail_path%></button>
+</div>
+

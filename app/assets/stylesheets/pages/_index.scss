@@ -1,2 +1,44 @@
 // Import page-specific CSS files here.
 @import "home";
+
+body{
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:#fff;
+
+}
+.banner{
+  background-color:rgba(232, 62, 140, 0.5);
+  h1{
+    color:#fff;
+    text-align: center;
+    font-size:72px;
+    padding:25px;
+  }
+}
+.btn{
+  background-color:#e83e8c;
+  display: flex;
+  align-items: center;
+  a{
+    color:#fff;
+  }
+}
+.card{
+  height: 180px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin:25px;
+  display: flex;
+  align-items: center;
+  a{
+    color:#e83e8c;
+    font-size:32px;
+    font-weight: bold;
+  }
+  img{
+    height:120px,
+  }
+}
+
